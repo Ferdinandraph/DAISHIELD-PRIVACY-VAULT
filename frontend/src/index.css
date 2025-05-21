@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600&family=Fira+Code&display=swap');
+@import 'react-toastify/dist/ReactToastify.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.Toastify__toast {
+  font-family: 'Inter', sans-serif;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.Toastify__toast--success {
+  background: #2D3748; /* neutral-card-dark */
+  color: #F4C107; /* accent-gold */
+}
+.Toastify__toast--error {
+  background: #2D3748;
+  color: #EF4444; /* red-500 */
+}
+.Toastify__close-button {
+  color: #F4C107;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom, #F9FAFB, #E5E7EB);
+  color: #1F2937;
+  min-height: 100vh;
+}
+
+body.dark {
+  background: linear-gradient(to bottom, #1F2937, #374151);
+  color: #F9FAFB;
+}
+
+body::before,
+body::after {
+  display: none;
+}
+
+.animate-spin-slow {
+  animation: spin 3s linear infinite;
+}
+
+.shadow-celestial {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
